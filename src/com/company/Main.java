@@ -16,7 +16,7 @@ public class Main {
         System.out.println(t);
         System.out.println("With Variables: ");
         Car carSkoda = new Car("Superb","Diesel","Automatic",135,2008,45000,1600,"Skoda");
-        Boat fakirBoat = new Boat("Fakirler","Boat","Bilmez",123,123,123,123,123,123,123);
+        Boat fakirBoat = new Boat("Scanner Envy","Boat","Automatic",250,2017,125000, 750,45,30,5);
         Truck scaniaTruck = new Truck("S730","Diesel","Automatic",730,2020,1000000,5000,60000);
         System.out.println();
         System.out.println("#####CAR######");
