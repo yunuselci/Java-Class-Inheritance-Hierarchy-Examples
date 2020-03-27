@@ -46,6 +46,9 @@ public class Main {
         System.out.println("Knot: " + fakirBoat.getKnot());
         System.out.println("Life Jacket: " + fakirBoat.getLifejacket());
         System.out.println("Wind Power: " + fakirBoat.getWindPower());
+        fakirBoat.length_information(100);
+        System.out.println("Capacity: " + fakirBoat.calculateCapacity());
+        System.out.println("Current Knot: " + fakirBoat.calculateCurrentKnot());
         System.out.println();
         System.out.println("#####TRUCK######");
         System.out.println(scaniaTruck);

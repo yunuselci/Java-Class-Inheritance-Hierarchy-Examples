@@ -45,7 +45,7 @@ public class Boat extends Vehicle implements Sea {
     @Override
     public void length_information(int length) {
         if (length < 10) {
-            System.out.println("x");
+            System.out.println("Fisherman Boat");
         } else {
             System.out.println("Yacht");
         }
