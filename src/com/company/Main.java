@@ -18,6 +18,8 @@ public class Main {
         Car carSkoda = new Car("Superb","Diesel","Automatic",135,2008,45000,1600,"Skoda");
         Boat fakirBoat = new Boat("Fakirler","Boat","Bilmez",123,123,123,123,123,123,123);
         Truck scaniaTruck = new Truck("S730","Diesel","Automatic",730,2020,1000000,5000,60000);
+        System.out.println();
+        System.out.println("#####CAR######");
         System.out.println(carSkoda);
         System.out.println("T.type: " + carSkoda.getTransmission_type());
         System.out.println("Brand: " + carSkoda.getBrand());
@@ -27,6 +29,12 @@ public class Main {
         System.out.println("Year: " + carSkoda.getYear());
         System.out.println("Price: " + carSkoda.getPrice());
         System.out.println("Weight: " + carSkoda.getWeight());
+        System.out.println("Max Speed: " + carSkoda.calculateMaxSpeed());
+        System.out.println("Consumption: " + carSkoda.calculateConsumption());
+        System.out.println("Time: " + carSkoda.calculateTime(300));
+        carSkoda.cartrunk_capacity(27000);
+        System.out.println();
+        System.out.println("#####BOAT######");
         System.out.println(fakirBoat);
         System.out.println("T.type: " + fakirBoat.getTransmission_type());
         System.out.println("Engine Type: " + fakirBoat.getEngine_type());
@@ -38,6 +46,8 @@ public class Main {
         System.out.println("Knot: " + fakirBoat.getKnot());
         System.out.println("Life Jacket: " + fakirBoat.getLifejacket());
         System.out.println("Wind Power: " + fakirBoat.getWindPower());
+        System.out.println();
+        System.out.println("#####TRUCK######");
         System.out.println(scaniaTruck);
         System.out.println("T.type: " + scaniaTruck.getTransmission_type());
         System.out.println("Engine Type: " + scaniaTruck.getEngine_type());
@@ -47,8 +57,10 @@ public class Main {
         System.out.println("Price: " + scaniaTruck.getPrice());
         System.out.println("Weight: " + scaniaTruck.getWeight());
         System.out.println("Max Load Capacity: " + scaniaTruck.getMaxLoadCapacity());
-
-
+        System.out.println("Max Speed: " + scaniaTruck.calculateMaxSpeed());
+        System.out.println("Consumption: " + scaniaTruck.calculateConsumption());
+        System.out.println("Time: " + scaniaTruck.calculateTime(300));
+        scaniaTruck.cartrunk_capacity(27000);
 
     }
 }

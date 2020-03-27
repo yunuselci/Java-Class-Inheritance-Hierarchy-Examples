@@ -17,22 +17,26 @@ public class Truck extends Vehicle implements Land {
 
     @Override
     public double calculateConsumption() {
-        return 0;
+        return weight*4.85;
     }
 
     @Override
     public double calculateMaxSpeed() {
-        return 0;
+        return hp*0.35;
     }
 
     @Override
     public double calculateTime(double km) {
-        return 0;
+        return  (double) (km/calculateMaxSpeed());
     }
 
     @Override
     public void cartrunk_capacity(int capacity) {
-
+        if(capacity >= maxLoadCapacity){
+            System.out.println("Capacity limits exceeded");
+        }else{
+            System.out.println("You can load your belongings");
+        }
     }
 
     public int getMaxLoadCapacity() {
